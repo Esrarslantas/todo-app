@@ -146,13 +146,6 @@ function App() {
     setShowSuggestions(false);
   };
 
-  const toggleDone = (id) => {
-    const yeniListe = gorevler.map((g) =>
-      g.id === id ? { ...g, done: !g.done } : g,
-    );
-    setGorevler(yeniListe);
-  };
-
   const sil = (id) => {
     const yeniListe = gorevler.filter((g) => g.id !== id);
     setGorevler(yeniListe);

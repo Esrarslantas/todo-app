@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+body {
+  background-color: #f3f6f6;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px 10px;
+  color: #2a3d40;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2.app-title {
+  text-align: center;
+  font-weight: 700;
+  color: #36747d;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  background: white;
+  border-radius: 20px;
+  padding: 35px 30px 40px;
+  box-shadow: 0 8px 20px rgba(51, 204, 171, 0.3);
+}
+
+.form-section {
+  background-color: #33ccab;
+  border-radius: 20px;
+  padding: 25px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 25px rgba(51, 204, 171, 0.45);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  user-select: none;
+  color: white;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 14px 18px;
+  font-size: 1.1rem;
+  flex-grow: 1;
+  flex-basis: 100%;
+  transition: box-shadow 0.3s ease;
+  color: #06373d;
+  font-weight: 500;
+}
+
+.form-section input::placeholder,
+.form-section textarea::placeholder,
+.form-section select {
+  color: #06373ddd;
+  font-weight: 500;
+}
+
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px 3px rgba(93, 178, 164, 0.85);
+}
+
+.form-section button {
+  background-color: #245269;
+  border: none;
+  font-weight: 700;
+  padding: 14px 0;
+  border-radius: 18px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.25s ease;
+  flex-grow: 1;
+  flex-basis: 100%;
+  color: #f3f6f6;
+  user-select: none;
+  box-shadow: 0 5px 18px rgba(36, 82, 105, 0.7);
+}
+
+.form-section button:hover {
+  background-color: #1c4252;
+  transform: scale(1.06);
+  box-shadow: 0 8px 22px rgba(28, 66, 82, 0.9);
+}
+
+.card-custom {
+  border-radius: 20px !important;
+  box-shadow: 0 8px 20px rgba(51, 204, 171, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  background: white;
+  padding: 16px 20px;
+}
+
+.card-custom:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(51, 204, 171, 0.4);
+}
+
+.card-priority-high {
+  border-left: 8px solid #dd6b61 !important;
+}
+
+.card-priority-medium {
+  border-left: 8px solid #f1c40f !important;
+}
+
+.card-priority-low {
+  border-left: 8px solid #2980b9 !important;
+}
+
+.task-icon {
+  font-size: 2rem;
+  margin-right: 14px;
+  user-select: none;
+  align-self: flex-start;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #244b56;
+}
+
+.card-title.done {
+  text-decoration: line-through;
+  color: #9daaba;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #506f7a;
+  margin-bottom: 8px;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.btn-outline-danger {
+  border-color: #33ccab;
+  color: #33ccab;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+  padding: 8px 14px;
+  font-size: 1rem;
+  border-radius: 14px;
+}
+
+.btn-outline-danger:hover {
+  background-color: #33ccab;
+  color: white;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 28px 32px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(16, 64, 72, 0.12);
+  color: #2a3d40;
+}
+
+.modal-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #234453;
+}
+
+.modal-content p {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+  color: #506f7a;
+}
+
+.modal-content button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.modal-content button:first-of-type {
+  background-color: #33ccab;
+  color: white;
+  margin-right: 18px;
+}
+
+.modal-content button:first-of-type:hover {
+  background-color: #28a08a;
+}
+
+.modal-content button:last-of-type {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.modal-content button:last-of-type:hover {
+  background-color: #b4362a;
+}
+
+.suggestions-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  max-height: 140px;
+  overflow-y: auto;
+  box-shadow: 0 10px 20px rgba(51, 204, 171, 0.45);
+  z-index: 1000;
+  margin: 0;
+  padding: 6px 0;
+  list-style: none;
+}
+
+.suggestions-list li {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  color: #2a3d40;
+}
+
+.suggestions-list li:hover {
+  background-color: #e0f2f1;
+}
+
+.plan-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 18px;
+}
+
+.plan-tabs button {
+  min-width: 90px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 28px;
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.plan-tabs button.btn-primary {
+  background-color: #36747d;
+  border: none;
+  color: #f3f6f6;
+  box-shadow: 0 5px 15px rgba(54, 116, 125, 0.9);
+}
+
+.plan-tabs button.btn-primary:hover {
+  background-color: #2d5a64;
+  box-shadow: 0 8px 20px rgba(45, 90, 100, 1);
+}
+
+.plan-tabs button.btn-outline-primary {
+  background-color: transparent;
+  border: 2px solid #36747d;
+  color: #36747d;
+}
+
+.plan-tabs button.btn-outline-primary:hover {
+  background-color: #c9f0eb;
+}
+
+.category-filter label {
+  cursor: pointer;
+  margin-right: 14px;
+  user-select: none;
+  font-weight: 600;
+  color: #245269;
+}
+
+.category-filter input[type="radio"] {
+  margin-right: 6px;
+  cursor: pointer;
+  vertical-align: middle;
+}
